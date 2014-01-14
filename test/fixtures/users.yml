@@ -3,3 +3,9 @@ kieran:
   last_name: "riggall"
   email: "kieran@gmail.com"
   profile_name: "kieranrizza"
+
+paul:
+  first_name: "paul"
+  last_name: "jones"
+  email: "pjones@treebook.com"
+  profile_name: "pjones"
