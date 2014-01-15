@@ -5,7 +5,7 @@ class StatusesController < ApplicationController
 
   def index
     @statuses = Status.all
-    @current_user = current_user
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @statuses }
