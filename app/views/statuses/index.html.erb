@@ -3,7 +3,7 @@
 </div>
 <%= link_to "Post a new status", new_status_path, class: "btn btn-success" %>
 
-<% @statuses.each do |status| %>
+<% @statuses.reverse_each do |status| %>
 <div class="status">
 	<div class="row">
 		<div class="span1">
