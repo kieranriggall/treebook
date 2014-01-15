@@ -1,7 +1,7 @@
 <%= simple_form_for(@status, html: {class: "form-horizontal"}) do |f| %>
   <% if @status.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h2>
+      <h3><%= pluralize(@status.errors.count, "error") %></h3>
 
       <ul>
       <% @status.errors.full_messages.each do |msg| %>
@@ -10,8 +10,7 @@
       </ul>
     </div>
   <% end %>
-
-    <%= f.input :user_id, collection: User.all, label_method: :full_name, readonly: true, selected: current_user.id, input_html: {value: current_user.id} %>
+    <%= f.input :user_id, input_html: {value: current_user.id,readonly:'readonly'} ,as: :hidden %>
     <%= f.input :content %>
   <div class="form-actions">
     <%= f.button :submit %>
