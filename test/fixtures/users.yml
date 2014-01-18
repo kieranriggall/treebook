@@ -9,3 +9,9 @@ paul:
   last_name: "jones"
   email: "pjones@treebook.com"
   profile_name: "pjones"
+
+mike:
+  first_name: "Mike"
+  last_name: "the frog"
+  email: "mike@email.com"
+  profile_name: "mike"
